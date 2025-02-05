@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title> Formulário </title>
+
+</head>
+<body>
+
+    <div class = "forms">
+        <form action="generos">
+            <h1>Select</h1>
+            <label for="genero">Seu genero</label>
+            <select name="genero" id="genero">
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="n">Não definido</option>
+                <option value="t">Prefiro não informar</option>
+            </select>
+
+            <label for="">Estado</label>
+            <select name="Estado" id="Estado">
+                <option value="">Selecione</option>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+                <br> </br>
+
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <br />
+
+                <optgroup label="Centro-Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Minas Gerais</option>
+                    <option value="GO">Goiânia</option>
+                </optgroup>
+            </select>
+            <br> </br>
+
+            <!-- SELEÇÃO MULTIPLA -->
+            <label for="data">Data</label>
+            <select name="data" id="data" multiple>
+                <optgroup label="Ano">
+                    <option value="2000">2000</option>
+                    <option value="2010">2010</option>
+                    <option value="2015">2015</option>
+                    <option value="2020">2020</option>
+                </optgroup>
+                
+                <optgroup label="Mês">
+                    <option value="01">janeiro</option>
+                    <option value="02">fevereiro</option>
+                    <option value="03">março</option>
+                    <option value="04">abril</option>
+                </optgroup>
+
+                <optgroup label="Periodo">
+                    <option value="bi">bimestre</option>
+                    <option value="tri">trimestre</option>
+                    <option value="sem">semestre</option>
+                    <option value="+">mais</option>
+                </optgroup>
+            </select>
+        </form>
